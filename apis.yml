@@ -52,6 +52,8 @@ apis:
   - type: Onboarding
     url: https://www.umb.com/contact-us/institutional-fintech-banking-services
 common:
+- type: DomainSecurity
+  url: security/umb-financial-domain-security.yml
 - type: Website
   url: https://www.umb.com/
 - type: Documentation
@@ -66,6 +68,12 @@ common:
   url: https://www.umb.com/privacy-security
 - type: Support
   url: https://www.umb.com/contact-us
+- type: Login
+  url: https://www.umb.com/login
+- type: GettingStarted
+  url: https://www.umb.com/institutional-banking/institutional-and-fintech-banking-services/banking-apis
+- type: LLMsTxt
+  url: llms/umb-financial-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

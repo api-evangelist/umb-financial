@@ -1,0 +1,19 @@
+generated: '2026-07-23'
+method: searched
+source: live probes of /.well-known/* on the UMB primary host
+host: https://www.umb.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+note: No /.well-known discovery documents are published on the UMB public host.
+  The Banking-as-a-Service / open-banking API program is partner-gated (consultation
+  and contracting), so OAuth/OIDC discovery metadata is not exposed on the public
+  marketing host. Empty result is expected and recorded for auditability.

@@ -1,0 +1,28 @@
+# UMB Bank
+
+> UMB Bank, National Association is the primary banking subsidiary of UMB Financial Corporation (Nasdaq: UMBF), a Kansas City, Missouri financial services holding company with roughly $70 billion in assets. UMB runs a partner-facing open-banking and Banking-as-a-Service (BaaS) program through its Institutional & Fintech Banking group, exposing REST APIs across risk & compliance, customer onboarding, accounts, information (statements/check images), and cash management. Access is partner-gated through a consultation and contracting process — there is no public self-serve developer portal and no publicly downloadable OpenAPI specification.
+
+## APIs
+
+- [UMB Banking APIs (Open Banking / BaaS)](https://www.umb.com/institutional-banking/institutional-and-fintech-banking-services/banking-apis): Partner-facing REST API program documented across five areas — Risk & Compliance (retrieve questions required for new customer applications), Customer (onboard customers upon application review and approval), Accounts (retrieve customer account details such as address and phone), Information (retrieve artifacts such as statements and check images), and Cash Management (bill payment and remote deposit capture).
+
+## Docs
+
+- [Institutional & Fintech Banking Services](https://www.umb.com/institutional-banking/institutional-and-fintech-banking-services): Overview of UMB's institutional and fintech banking program.
+- [Banking APIs](https://www.umb.com/institutional-banking/institutional-and-fintech-banking-services/banking-apis): API program overview and the five documented API areas.
+- [Onboarding / Contact](https://www.umb.com/contact-us/institutional-fintech-banking-services): Consultation and contracting entry point to request API access.
+
+## Company
+
+- [Website](https://www.umb.com/)
+- [Blog](https://blog.umb.com)
+- [LinkedIn](https://www.linkedin.com/company/umbbank/)
+- [Terms & Conditions](https://www.umb.com/terms-conditions)
+- [Privacy & Security](https://www.umb.com/privacy-security)
+- [Support / Contact](https://www.umb.com/contact-us)
+
+## Notes
+
+- Access model: partner-gated (consultation + contracting); no public self-serve signup for the API program.
+- No public OpenAPI/Swagger specification, GraphQL endpoint, MCP server, SDKs, or /.well-known discovery documents are published.
+- Consumer-permissioned account data is reached primarily through the Plaid aggregator rather than a first-party public API.
