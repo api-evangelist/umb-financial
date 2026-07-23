@@ -1,0 +1,88 @@
+aid: umb-financial
+name: UMB Bank
+review:
+  question: Does UMB Bank expose a public, self-serve first-party developer API with
+    downloadable specifications, or is its API access partner-gated / aggregator-only?
+  answer: partner-gated; no public self-serve API or downloadable spec
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    UMB Bank, National Association (subsidiary of UMB Financial Corporation,
+    Nasdaq: UMBF; OCC-supervised national bank charter; ~$70B in assets) runs
+    a real but partner-gated open-banking / Banking-as-a-Service API program
+    through its Institutional & Fintech Banking group. The program is described
+    on a public product page (banking-apis) across five REST API areas — Risk &
+    Compliance, Customer, Accounts, Information, and Cash Management — but there
+    is NO public self-serve developer portal, NO published base URL, and NO
+    publicly downloadable OpenAPI/Swagger specification. No `developer.umb.com`,
+    `api.umb.com`, `developers.umb.com`, or `apis.umb.com` subdomain resolves.
+    Partner access is obtained through a consultation and contracting process.
+    Consumer-permissioned account data is reached primarily through the Plaid
+    aggregator rather than a first-party public API. No FDX participation and no
+    CFPB Section 1033 data-access posture are publicly documented as of the
+    review date. Authentication model for the partner APIs is not publicly
+    disclosed (not published on the product page).
+  developerPortal:
+    exists: false
+    note: No dedicated developer portal. API program documented on a product
+      page at umb.com/institutional-banking/.../banking-apis (HTTP 200). No
+      self-serve signup, API keys, or reference docs are public.
+  probedSubdomains:
+    - host: developer.umb.com
+      status: NXDOMAIN
+    - host: api.umb.com
+      status: NXDOMAIN
+    - host: developers.umb.com
+      status: NXDOMAIN
+    - host: apis.umb.com
+      status: NXDOMAIN
+  specProvenance:
+    openapiHarvested: false
+    note: No public OpenAPI/Swagger available to harvest. openapi/ is empty.
+  authModel: undisclosed
+  fdxParticipation: false
+  section1033Posture: none-published
+  aggregatorAccess:
+    - Plaid
+  documentedApiAreas:
+    - Risk & Compliance — retrieve questions required for a new customer application
+    - Customer — onboard customers upon application review and approval
+    - Accounts — retrieve customer account details such as address and phone number
+    - Information — retrieve artifacts such as statements and check images
+    - Cash Management — bill payment and remote deposit capture via REST APIs
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: true
+      note: Product page states the program is delivered via REST APIs. No base
+        URL is published; access is partner-gated.
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No streaming/WebSocket surface is documented.
+sources:
+  - url: https://www.umb.com/institutional-banking/institutional-and-fintech-banking-services/banking-apis
+    type: Documentation
+    status: 200
+    note: Banking APIs product page; lists five REST API areas, no spec, no base URL.
+  - url: https://www.umb.com/institutional-banking/institutional-and-fintech-banking-services
+    type: Documentation
+    status: 200
+    note: Institutional & Fintech Banking Services overview (BaaS/open banking).
+  - url: https://www.umb.com/contact-us/institutional-fintech-banking-services
+    type: Onboarding
+    status: 200
+    note: Partner engagement / consultation contact for the fintech banking program.
+  - url: https://www.openbankingtracker.com/provider/umb-bank-personal
+    type: Reference
+    note: Third-party tracker — UMB Bank consumer access listed via Plaid aggregator;
+      no direct API products.
+actions:
+  apisYmlUpdated: true
+  openapiHarvested: false
+  reason: |
+    No public developer portal, self-serve API, or downloadable specification
+    exists to harvest. The apis.yml records identity plus the single partner-gated
+    open-banking / BaaS program as one honest documentation pointer, and the
+    common block links only pages verified to return HTTP 200.

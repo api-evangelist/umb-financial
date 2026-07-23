@@ -1,0 +1,71 @@
+aid: umb-financial
+url: https://raw.githubusercontent.com/api-evangelist/umb-financial/refs/heads/main/apis.yml
+name: UMB Bank
+kind: company
+description: UMB Bank, National Association is the primary banking subsidiary of UMB
+  Financial Corporation (Nasdaq ticker UMBF), a Kansas City, Missouri financial services
+  holding company. UMB is a commercial bank operating under a national (federal) bank
+  charter supervised by the Office of the Comptroller of the Currency (OCC), with roughly
+  $70 billion in assets following its 2025 acquisition of Heartland Financial and branches
+  across the central United States. It offers personal, commercial, and institutional
+  banking, including asset servicing, corporate trust, and healthcare (HSA) services.
+  UMB runs a partner-facing open-banking and Banking-as-a-Service (BaaS) program through
+  its Institutional & Fintech Banking group, exposing REST APIs across risk & compliance,
+  customer onboarding, accounts, information (statements/check images), and cash management.
+  Access is partner-gated through a consultation and contracting process — there is no
+  public self-serve developer portal, no publicly downloadable OpenAPI/Swagger specification,
+  and no published FDX or CFPB 1033 posture. Consumer-permissioned account data is reached
+  primarily through the Plaid aggregator rather than a first-party public API.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- United States
+- Open Finance
+- Banking-as-a-Service
+- Institutional Banking
+- Data Aggregation
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis:
+- aid: umb-financial:umb-banking-apis
+  name: UMB Banking APIs (Open Banking / BaaS)
+  description: UMB's partner-facing open-banking and Banking-as-a-Service REST API program,
+    documented across five areas — Risk & Compliance (retrieve questions required for
+    new customer applications), Customer (onboard customers upon application review and
+    approval), Accounts (retrieve customer account details such as address and phone),
+    Information (retrieve artifacts such as statements and check images), and Cash Management
+    (bill payment and remote deposit capture). Access is partner-gated via consultation;
+    no public developer portal, base URL, or downloadable specification is published.
+  humanURL: https://www.umb.com/institutional-banking/institutional-and-fintech-banking-services/banking-apis
+  tags:
+  - Open Banking
+  - Banking-as-a-Service
+  - Payments
+  - Onboarding
+  properties:
+  - type: Documentation
+    url: https://www.umb.com/institutional-banking/institutional-and-fintech-banking-services/banking-apis
+  - type: Documentation
+    url: https://www.umb.com/institutional-banking/institutional-and-fintech-banking-services
+  - type: Onboarding
+    url: https://www.umb.com/contact-us/institutional-fintech-banking-services
+common:
+- type: Website
+  url: https://www.umb.com/
+- type: Documentation
+  url: https://www.umb.com/institutional-banking/institutional-and-fintech-banking-services/banking-apis
+- type: LinkedIn
+  url: https://www.linkedin.com/company/umbbank/
+- type: Blog
+  url: https://blog.umb.com
+- type: TermsOfService
+  url: https://www.umb.com/terms-conditions
+- type: PrivacyPolicy
+  url: https://www.umb.com/privacy-security
+- type: Support
+  url: https://www.umb.com/contact-us
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
