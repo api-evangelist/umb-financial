@@ -29,6 +29,14 @@ deliveryModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
+- Financial-Services
+- Banking
+- United States
+- Open Finance
+- Banking as a Service
+- Institutional Banking
+- Data Aggregation
+tags_raw:
 - Financial Services
 - Banking
 - United States
@@ -51,6 +59,11 @@ apis:
     no public developer portal, base URL, or downloadable specification is published.
   humanURL: https://www.umb.com/institutional-banking/institutional-and-fintech-banking-services/banking-apis
   tags:
+  - Open Banking
+  - Banking as a Service
+  - Payments
+  - Onboarding
+  tags_raw:
   - Open Banking
   - Banking-as-a-Service
   - Payments
