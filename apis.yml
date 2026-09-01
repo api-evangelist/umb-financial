@@ -33,7 +33,7 @@ tags:
 - Banking
 - United States
 - Open Finance
-- Banking-as-a-Service
+- Banking as a Service
 - Institutional Banking
 - Data Aggregation
 tags_raw:
@@ -60,7 +60,7 @@ apis:
   humanURL: https://www.umb.com/institutional-banking/institutional-and-fintech-banking-services/banking-apis
   tags:
   - Open Banking
-  - Banking-as-a-Service
+  - Banking as a Service
   - Payments
   - Onboarding
   tags_raw:
