@@ -1,0 +1,18 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/umb-financial/integrations
+- https://zapier.com/apps/umb-bank/integrations
+- https://n8n.io/integrations/umb-financial/
+- https://composio.dev/toolkits/umb-financial
+- https://monid.ai/tools/umb-financial
+checked:
+- https://composio.dev/toolkits/umb-financial
+- https://monid.ai/tools/umb-financial
+- https://n8n.io/integrations/umb-financial/
+- https://zapier.com/apps/umb-bank/integrations
+- https://zapier.com/apps/umb-financial/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
